@@ -1,0 +1,39 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-self: stretch;
+    background: #EAF2FD;
+}
+
+.banner__titulo{
+    text-align: left;
+}
+
+.banner__texto{
+    text-align: justify;
+    font-weight: 300;
+}
+
+.banner__gif{
+    width: 10rem;
+    align-self: center;
+}
+
+@media screen and (min-width: 1060px) {
+    .banner__titulo{
+        align-self: center;
+    }
+    .banner__texto{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-self: center;
+    }
+
+    .banner__gif{
+        width: 10rem;
+        align-self: center;
+    }
+
+}

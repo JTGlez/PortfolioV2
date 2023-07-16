@@ -1,0 +1,23 @@
+.footerpage{
+    padding: 2rem;
+    display: flex;
+    background: linear-gradient(#EAF2FD, rgb(255, 255, 255));
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerpage__linkref{
+    font-weight: 300;
+    text-decoration: none;
+    transition: 400ms;
+    text-align: center;
+}
+
+.footerpage__linkref:hover{
+    font-size: 18px;
+}
+
+.footerpage__copyright{
+    text-align: center;
+    font-weight: 300;
+}

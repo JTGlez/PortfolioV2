@@ -1,0 +1,89 @@
+/*Define contenedor del título con Flexbox*/
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.title__profile{
+    width: 20%;
+    height: 20%;
+    flex-direction: column;
+}
+
+.title__bio{
+    margin-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title__subsection{
+    flex-direction: column;
+    text-align: center;
+    font-weight: 300;
+}
+
+.networks{
+    display: block;
+}
+
+.networks__list{
+    display: flex;
+    text-align: center;
+}
+
+.networks__list__item{
+    display: inline-block;
+
+}
+
+.item__text{
+    margin: 0 1rem 0 1rem;
+    transition: 400ms;
+}
+
+.item__text:hover{
+    transform: scale(1.2);
+}
+
+.networks__item__link{
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.item__text{
+    display: flex;
+    color:gray;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    font-weight: 300;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 769px) {
+    .title__profile{
+        width: 9rem;
+    }
+}
+
+
+@media screen and (min-width: 1060px) {
+
+    .title::before{
+        content: "";
+        background-image: url("../img/train.png");
+        background-size:cover;
+        position: fixed; /* change position to absolute */
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.05;
+        z-index: -1; /*Para que no bloquee los links*/
+    }
+}
